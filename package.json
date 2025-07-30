@@ -1,0 +1,38 @@
+{
+  "name": "YTDL",
+  "version": "1.0.0",
+  "description": "A comprehensive YouTube video and audio downloader with multiple fallback methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "video",
+    "audio",
+    "mp4",
+    "mp3",
+    "youtube-dl",
+    "shorts"
+  ],
+  "author": "rrashedul59",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrashedul59/YTDL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rrashedul59/YTDL/issues"
+  },
+  "homepage": "https://github.com/rrashedul59/YTDL#readme",
+  "dependencies": {
+    "@types/node": "^22.13.11",
+    "axios": "^1.11.0",
+    "fs-extra": "^11.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
