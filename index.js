@@ -3,7 +3,7 @@ const { getYouTubeData } = require('./src/yt');
 const { ytdhortdl } = require('./src/ytshort');
 
 /**
- * YTDL - YouTube Video Downloader
+ * bebytdl - YouTube Video Downloader
  * A comprehensive YouTube downloader supporting both regular videos and shorts
  */
 
@@ -90,7 +90,7 @@ module.exports = {
 if (require.main === module) {
   const testUrl = 'https://youtu.be/3sDfsZboq3Y?si=mrqYnW00_fz3pyzG';
   
-  console.log('YTDL - YouTube Downloader Test');
+  console.log('bebytdl - YouTube Downloader Test');
   console.log('==================================');
   
   autoDownload(testUrl)

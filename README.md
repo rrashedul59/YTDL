@@ -1,5 +1,5 @@
 
-# YTDL - YouTube Downloader
+# BebyTDL - YouTube Downloader
 
 A comprehensive Node.js package for downloading YouTube videos and audio with multiple fallback methods.
 
@@ -15,13 +15,13 @@ A comprehensive Node.js package for downloading YouTube videos and audio with mu
 ## Installation
 
 ```bash
-npm install YTDL
+npm install bebytdl
 ```
 
 ## Quick Start
 
 ```javascript
-const { autoDownload, downloadVideo, downloadAudio } = require('YTDL');
+const { autoDownload, downloadVideo, downloadAudio } = require('bebytdl');
 
 // Auto-detect and download (recommended)
 const result = await autoDownload('https://youtu.be/VIDEO_ID');
@@ -117,12 +117,12 @@ const result = await downloadAudio('https://youtu.be/3sDfsZboq3Y');
 ### Basic Video Download
 
 ```javascript
-const YTDL = require('YTDL');
+const bebytdl = require('bebytdl');
 
 async function downloadYouTubeVideo() {
   try {
     const url = 'https://youtu.be/dQw4w9WgXcQ';
-    const result = await YTDL.autoDownload(url);
+    const result = await bebytdl.autoDownload(url);
     
     if (result.success) {
       console.log('✅ Download successful!');
@@ -147,11 +147,11 @@ downloadYouTubeVideo();
 ### Audio-Only Download
 
 ```javascript
-const YTDL = require('YTDL');
+const bebytdl = require('bebytdl');
 
 async function downloadAudio() {
   const url = 'https://youtu.be/dQw4w9WgXcQ';
-  const result = await YTDL.downloadAudio(url);
+  const result = await bebytdl.downloadAudio(url);
   
   if (result.success) {
     console.log('Audio download data:', result.data);
@@ -162,7 +162,7 @@ async function downloadAudio() {
 ### Multiple URLs
 
 ```javascript
-const YTDL = require('YTDL');
+const bebytdl = require('bebytdl');
 
 const urls = [
   'https://youtu.be/dQw4w9WgXcQ',
@@ -172,7 +172,7 @@ const urls = [
 async function downloadMultiple() {
   for (const url of urls) {
     console.log(`\nProcessing: ${url}`);
-    const result = await YTDL.autoDownload(url);
+    const result = await bebytdl.autoDownload(url);
     
     if (result.success) {
       console.log(`✅ ${result.data.title}`);
@@ -197,7 +197,7 @@ downloadMultiple();
 The package includes comprehensive error handling:
 
 ```javascript
-const result = await YTDL.autoDownload(url);
+const result = await bebytdl.autoDownload(url);
 
 if (!result.success) {
   switch (result.source) {

@@ -1,5 +1,5 @@
 {
-  "name": "YTDL",
+  "name": "bebytdl",
   "version": "1.0.0",
   "description": "A comprehensive YouTube video and audio downloader with multiple fallback methods",
   "main": "index.js",
@@ -21,12 +21,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rrashedul59/YTDL.git"
+    "url": "https://github.com/rrashedul59/bebytdl.git"
   },
   "bugs": {
-    "url": "https://github.com/rrashedul59/YTDL/issues"
+    "url": "https://github.com/rrashedul59/bebytdl/issues"
   },
-  "homepage": "https://github.com/rrashedul59/YTDL#readme",
+  "homepage": "https://github.com/rrashedul59/bebytdl#readme",
   "dependencies": {
     "@types/node": "^22.13.11",
     "axios": "^1.11.0",
